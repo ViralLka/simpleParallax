@@ -1,7 +1,7 @@
 {
     "name": "simple-parallax-js",
-    "version": "5.1.0",
-    "description": "simpleParallax is a simple JavaScript library that gives your website parallax animations on any images",
+    "version": "5.4.0",
+    "description": "simpleParallax is a simple JavaScript library that gives your website parallax animations on any images or videos",
     "homepage": "https://simpleparallax.com/",
     "main": "./dist/simpleParallax.min.js",
     "types": "./index.d.ts",
@@ -18,6 +18,7 @@
         "fast",
         "light",
         "image",
+        "video",
         "effect",
         "vanilla",
         "es6"
@@ -28,7 +29,7 @@
         "start": "webpack-dev-server --mode development --open --port 3000 --hot",
         "build": "webpack --mode production",
         "format": "prettier --write '**/**.{js,json,html}'",
-        "lint": "eslint src --ext .js",
+        "lint": "eslint src --ext .js --fix",
         "test": "jest"
     },
     "husky": {
@@ -47,23 +48,24 @@
     },
     "dependencies": {
         "html-webpack-plugin": "^3.2.0",
-        "webpack": "^4.32.2",
-        "webpack-dev-server": "^3.3.1"
+        "webpack": "^4.41.5",
+        "webpack-dev-server": "^3.10.2"
     },
     "devDependencies": {
-        "@babel/core": "^7.4.4",
-        "@babel/preset-env": "^7.4.4",
+        "@babel/core": "^7.8.4",
+        "@babel/preset-env": "^7.8.4",
         "babel-loader": "^8.0.6",
-        "eslint": "^5.16.0",
-        "eslint-config-airbnb-base": "^13.1.0",
-        "eslint-plugin-import": "^2.17.3",
-        "eslint-plugin-node": "^9.1.0",
-        "husky": "^2.3.0",
-        "jest": "^24.8.0",
-        "lint-staged": "^8.1.7",
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb-base": "^14.0.0",
+        "eslint-plugin-import": "^2.20.0",
+        "eslint-plugin-node": "^11.0.0",
+        "husky": "^4.2.1",
+        "jest": "^25.1.0",
+        "lint-staged": "^10.0.7",
         "moment": "^2.24.0",
-        "prettier": "^1.17.1",
-        "uglifyjs-webpack-plugin": "^2.1.3",
-        "webpack-cli": "^3.3.2"
+        "prettier": "^1.19.1",
+        "terser-webpack-plugin": "^2.3.4",
+        "uglifyjs-webpack-plugin": "^2.2.0",
+        "webpack-cli": "^3.3.10"
     }
 }
